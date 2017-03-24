@@ -1,8 +1,8 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 import {RouterExtensions} from "nativescript-angular/router";
 
 @Component({
-    selector: 'nav-options',
+    selector: "nav-options",
     template: `
     <StackLayout>
         <Button text="clear-history" [nsRouterLink]="['/nav-info']" [clearHistory]="true"></Button>

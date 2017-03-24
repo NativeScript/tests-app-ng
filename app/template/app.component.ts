@@ -3,7 +3,7 @@ import {Component} from "@angular/core";
 @Component({
     selector: "my-app",
     styles: ["button {color: lime}"],
-    styleUrls: ["./template/app.component.css"],  
+    styleUrls: ["./template/app.component.css"],
     template: `
 <StackLayout>
     <Label text="Tap the button" class="title"></Label>
@@ -24,7 +24,7 @@ export class AppComponent {
             return "Hoorraaay! \nYou are ready to start building!";
         }
     }
-    
+
     public onTap() {
         this.counter--;
     }

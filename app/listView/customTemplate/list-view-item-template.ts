@@ -1,7 +1,7 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from "@angular/core";
 
 @Component({
-    selector: 'custom-template',
+    selector: "custom-template",
     template: `
         <StackLayout>
             <Label *ngFor="let element of data.list" [text]="element.text"></Label>
@@ -14,13 +14,13 @@ export class CustomTemplate {
 }
 
 @Component({
-    selector: 'list-test',
+    selector: "list-test",
     template: `
-        <GridLayout rows="*" automationText="mainView"> 
+        <GridLayout rows="*" automationText="mainView">
             <ListView [items]="myItems">
-                <template let-item="item">
+                <ng-template let-item="item">
                     <custom-template [data]="item"></custom-template>
-                </template>
+                </ng-template>
             </ListView>
         </GridLayout>
     `,
@@ -31,9 +31,8 @@ export class ListViewControlComponent {
     private counter: number;
 
     constructor() {
-        var list = [{ "text": "a" }, { "text": "b" }];
-        var list1 = [{ "text": "c" }, { "text": "d" }];
+        let list = [{ "text": "a" }, { "text": "b" }];
+        let list1 = [{ "text": "c" }, { "text": "d" }];
         this.myItems = [{ "list": list }, { "list": list1 }];
     }
 }
-
