@@ -1,21 +1,21 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from "@angular/core";
 
 @Component({
-    selector: 'list-test',
-    styleUrls: ['./listView/commonTemplate/list-view-page.css'],
-    template: ` 
-                <StackLayout automationText="mainView">
-                    <ListView [items]="myItems" (itemTap)="onItemTap($event)">
-                        <template let-item="item" let-i="index" let-odd="odd" let-even="even">
-                            <StackLayout [class.odd]="odd" [class.even]="even">
-                                <Label [text]='"index: " + i'></Label>
-                                <Label [text]='"[" + item.id +"] " + item.name'></Label>
-                            </StackLayout>
-                        </template>
-                    </ListView>
-                    <TextView [text]="results" automationText="tvResults" textWrap="true"></TextView>
-                </StackLayout>
-            `,
+    selector: "list-test",
+    styleUrls: ["./listView/commonTemplate/list-view-page.css"],
+    template: `
+        <StackLayout automationText="mainView">
+            <ListView [items]="myItems" (itemTap)="onItemTap($event)">
+                <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+                    <StackLayout [class.odd]="odd" [class.even]="even">
+                        <Label [text]='"index: " + i'></Label>
+                        <Label [text]='"[" + item.id +"] " + item.name'></Label>
+                    </StackLayout>
+                </ng-template>
+            </ListView>
+            <TextView [text]="results" automationText="tvResults" textWrap="true"></TextView>
+        </StackLayout>
+    `,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
@@ -25,10 +25,10 @@ export class ListViewComponent {
     private counter: number;
 
     constructor() {
-        this.results = '';
+        this.results = "";
         this.myItems = [];
         this.counter = 0;
-        for (var i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++) {
             this.myItems.push(new DataItem(i, "data item " + i));
             this.counter = i;
         }

@@ -12,12 +12,12 @@ import * as platform from "platform";
 })
 export class MainComponent {
     private _routers = [];
-    private _routes = require("../app.routes").routes
+    private _routes = require("../app.routes").routes;
     private _orientation: string = "vertical";
 
     constructor() {
         let routs = this._routes.filter((item) => {
-            let isNavigatable = item.data.isNavigatable != undefined && item.data.isNavigatable == true && item.path != '';
+            let isNavigatable = item.data.isNavigatable != undefined && item.data.isNavigatable == true && item.path != "";
             console.log("Page route:" + item.path + "; page name: " + item.data.title + "; isNavigatable: " + isNavigatable);
             return isNavigatable;
         });
@@ -38,7 +38,7 @@ export class MainComponent {
 }
 
 @Component({
-    selector: 'navigation-main',
+    selector: "navigation-main",
     template: `<page-router-outlet></page-router-outlet>`
 })
 export class NavigationMainPageRouter { }

@@ -1,10 +1,10 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 import {NSLocationStrategy} from "nativescript-angular/router/ns-location-strategy";
 import {Frame} from "ui/frame";
 
 
 @Component({
-    selector: 'nav-info',
+    selector: "nav-info",
     template: `
     <StackLayout>
         <Label [text]="'frameStack: ' + frameStack" ></Label>

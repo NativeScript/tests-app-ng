@@ -1,20 +1,20 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 
 @Component({
     selector: "first-action-bar",
     template: `
-    <ActionBar title="Title 1" automationText="title"> 
-        <ActionItem *ngIf="show" text="action" (tap)="onTap()" [nsRouterLink]="['/second']"></ActionItem>
-        <ActionItem (tap)="onShare()" ios.systemIcon="9" ios.position="left" 
-            android.systemIcon="ic_menu_share_holo_light" android.position="actionBar"></ActionItem>
-        <ActionItem text="delete" (tap)="onDelete()"
-            ios.systemIcon="16" ios.position="right" android.position="popup"></ActionItem>
-    </ActionBar>
+        <ActionBar title="Title 1" automationText="title">
+            <ActionItem *ngIf="show" text="action" (tap)="onTap()" [nsRouterLink]="['/second']"></ActionItem>
+            <ActionItem (tap)="onShare()" ios.systemIcon="9" ios.position="left"
+                android.systemIcon="ic_menu_share_holo_light" android.position="actionBar"></ActionItem>
+            <ActionItem text="delete" (tap)="onDelete()"
+                ios.systemIcon="16" ios.position="right" android.position="popup"></ActionItem>
+        </ActionBar>
 
-    <StackLayout verticalAlignment="center">
-        <Label [text]="messageShare"></Label>
-        <Label [text]="messageDelete"></Label>
-    </StackLayout>
+        <StackLayout verticalAlignment="center">
+            <Label [text]="messageShare"></Label>
+            <Label [text]="messageDelete"></Label>
+        </StackLayout>
     `,
 })
 export class FirstComponentActionBar {

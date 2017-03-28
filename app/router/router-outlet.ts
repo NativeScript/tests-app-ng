@@ -3,12 +3,12 @@ import {FirstComponent} from "../components/first.component";
 import {SecondComponent} from "../components/second.component";
 
 @Component({
-    selector: 'navigation-test',
-    styleUrls: ['./router/router-outlet.css'],
+    selector: "navigation-test",
+    styleUrls: ["./router/router-outlet.css"],
     template: `
         <StackLayout>
             <StackLayout class="nav">
-                <Button text="First" 
+                <Button text="First"
                     [nsRouterLink]="['/router','first']"></Button>
                 <Button text="Second"
                     [nsRouterLink]="['/router','second']"></Button>
@@ -20,8 +20,8 @@ import {SecondComponent} from "../components/second.component";
 })
 export class NavigationTestRouter { }
 
-export var NavigationSubRoutes = [
-    { path: '', redirectTo: 'first', pathMatch: "full" },
-    { path: 'first', component: FirstComponent },
-    { path: 'second', component: SecondComponent },
+export let NavigationSubRoutes = [
+    { path: "", redirectTo: "first", pathMatch: "full" },
+    { path: "first", component: FirstComponent },
+    { path: "second", component: SecondComponent },
 ];

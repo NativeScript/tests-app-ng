@@ -1,8 +1,8 @@
-import { Component, ChangeDetectionStrategy, ViewContainerRef, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewContainerRef, ChangeDetectorRef } from "@angular/core";
 import { ModalDialogService, ModalDialogOptions, ModalDialogParams } from "nativescript-angular/directives/dialogs";
 
 @Component({
-    selector: 'modal-content',
+    selector: "modal-content",
     template: `
     <StackLayout margin="24" horizontalAlignment="center" verticalAlignment="center">
         <Label [text]="prompt"></Label>
@@ -34,7 +34,7 @@ const TEMPLATE = `
 `;
 
 @Component({
-    selector: 'modal-test',
+    selector: "modal-test",
     providers: [ModalDialogService],
     template: TEMPLATE
 })
@@ -63,7 +63,7 @@ export class ModalTest {
 }
 
 @Component({
-    selector: 'modal-test-on-push',
+    selector: "modal-test-on-push",
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: TEMPLATE
 })
