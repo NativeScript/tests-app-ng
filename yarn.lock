@@ -222,9 +222,9 @@ ms@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
-"nativescript-angular@^3.0.0 || ^2.0.0-rc.1":
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/nativescript-angular/-/nativescript-angular-2.0.0-rc.1.tgz#480792b28b7dc31669480b0a26fc81b4cca47994"
+nativescript-angular@internal-preview:
+  version "2.0.0-2017-04-12-1445"
+  resolved "https://registry.yarnpkg.com/nativescript-angular/-/nativescript-angular-2.0.0-2017-04-12-1445.tgz#0737c57777aff6ecda512540c827a98cb49621b4"
   dependencies:
     "@angular/common" "~4.0.0"
     "@angular/compiler" "~4.0.0"

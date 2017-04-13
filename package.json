@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "nativescript-angular": "^3.0.0 || ^2.0.0-rc.1",
+    "nativescript-angular": "internal-preview",
     "nativescript-intl": "~0.0.10",
     "reflect-metadata": "~0.1.8",
     "rxjs": "^5.2.0",
