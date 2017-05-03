@@ -11,14 +11,14 @@ import { NavigationTestRouter, NavigationSubRoutes } from "./router/router-outle
 
 import { BindingComponent } from "./binding/binding-page";
 
-import { ListViewComponent } from "./listView/commonTemplate/list-view-page";
-import { ListViewControlComponent } from "./listView/customTemplate/list-view-item-template";
-import { ListViewAsyncPipeComponent } from "./listView/asyncPipeTemplate/async-pipe-template";
-import { ListViewMainPageComponent } from "./listView/listViewMainPage/list-view-main-page";
-import { ListViewWithNestedTemplateComponent } from "./listView/nestedTemplate/list-view-nested-template";
+import { ListViewComponent } from "./list-view/list-view-page";
+import { ListViewControlComponent } from "./list-view/list-view-item-template";
+import { ListViewAsyncPipeComponent } from "./list-view/async-pipe-template";
+import { ListViewMainPageComponent } from "./list-view/list-view-main-page";
+import { ListViewWithNestedTemplateComponent } from "./list-view/list-view-nested-template";
 
-import { ListPickerMainPageComponent } from "./listPicker/list-picker-main-page";
-import { ListPickerComponent } from "./listPicker/list-picker";
+import { ListPickerMainPageComponent } from "./list-picker/list-picker-main-page";
+import { ListPickerComponent } from "./list-picker/list-picker";
 
 import { ModalTest, ModalTestWithPushStrategy, ModalContent } from "./modal/modal-dialogs/modal-dialog.component";
 import { ModalViewMainPageComponent } from "./modal/modal-view-main-page";
