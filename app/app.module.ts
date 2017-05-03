@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { NavigationMainPageRouter } from "./main/main-page-router-outlet";
@@ -22,6 +22,7 @@ import { CustomTemplate } from "./list-view/list-view-item-template";
         NativeScriptRouterModule,
         NativeScriptRouterModule.forRoot(routes),
     ],
+    schemas: [NO_ERRORS_SCHEMA],
 })
 export class AppModule { }
 
