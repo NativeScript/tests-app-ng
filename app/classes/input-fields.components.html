@@ -1,0 +1,29 @@
+<StackLayout>
+
+    <!--checked-value-accessor.ts-->
+    <Switch [(ngModel)]="switch" #sw></Switch>
+    <Label [text]="sw.className"></Label>
+
+    <!--date-value-accessor.ts-->
+    <!--ERROR TypeError: Cannot read property 'getDay' of undefined-->
+    <DatePicker [(ngModel)]="dataPicker" #dp></DatePicker>
+    <Label [text]="dp.className"></Label>
+
+    <!--number-value-accessor.ts-->
+    <Slider [(ngModel)]="slider" #sl></Slider>
+    <Label [text]="sl.className"></Label>
+
+    <!--selectedIndex-value-accessor.ts-->
+    <SegmentedBar [items]="items" selectedIndex="2" [(ngModel)]="segmentedBar" #sb></SegmentedBar>
+    <Label [text]="sb.className"></Label>
+
+    <!--text-value-accessor.ts-->
+    <TextField [(ngModel)]="textField" #tf></TextField>
+    <Label [text]="tf.className"></Label>
+
+    <!--time-value-accessor.ts-->
+    <!--ERROR Error: Uncaught (in promise): TypeError: Cannot read property 'getHours' of null-->
+    <TimePicker [(ngModel)]="timePicker" #tp></TimePicker>
+    <Label [text]="tp.className"></Label>
+
+</StackLayout>

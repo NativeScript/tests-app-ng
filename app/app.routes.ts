@@ -25,6 +25,8 @@ import { ModalTest, ModalTestWithPushStrategy, ModalContent } from "./modal/moda
 import { ModalViewMainPageComponent } from "./modal/modal-view-main-page";
 import { LazyLoadModalComponent } from "./modal/lazy/lazy-load-modal.component";
 
+import { InputFieldsComponents } from "./classes/input-fields.components";
+
 import { TabViewComponent } from "./tab-view/tab-view.component";
 
 import { NavigationOptionsComponent } from "./navigation-options/navigation-options.component";
@@ -65,6 +67,8 @@ export const routableComponents = [
     ModalTestWithPushStrategy,
     LazyLoadModalComponent,
 
+    InputFieldsComponents,
+
     TabViewComponent,
 
     NavigationOptionsComponent,
@@ -103,6 +107,8 @@ export const routes = [
     { path: 'modal/modal-dialogs', component: ModalTest, data: { title: "modal" } },
     { path: 'modal/modal-dialogs-push', component: ModalTestWithPushStrategy, data: { title: "modal(onPush)" } },
     { path: 'modal/lazy', component: LazyLoadModalComponent, data: { title: "modal(lazy)" } },
+
+    { path: 'input-fields', component: InputFieldsComponents, data: { title: "input-fields", isNavigatable: true } },
 
     { path: 'tab-view', component: TabViewComponent, data: { title: "tab-view", isNavigatable: true } },
 
